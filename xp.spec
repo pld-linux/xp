@@ -3,6 +3,7 @@ Summary(pl):	XP - Parser XML napisany w Javie
 Name:		xp
 Version:	0.5
 Release:	2
+Epoch:		1
 Vendor:		James Clark
 License:	Free
 Group:		Applications/Publishing/XML/Java
