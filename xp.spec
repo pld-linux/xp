@@ -1,5 +1,5 @@
 Summary:	XP - an XML Parser in Java
-Summary(pl):	XP - Parser XML napisany w Javie
+Summary(pl):	XP - analizator sk³adniowy XML-a napisany w Javie
 Name:		xp
 Version:	0.5
 Release:	3
@@ -26,7 +26,7 @@ BuildArch:	noarch
 XP - an XML Parser in Java.
 
 %description -l pl
-XP - Parser XML napisany w Javie.
+XP - analizator sk³adniowy XML-a napisany w Javie.
 
 %prep
 %setup -q -c -T
