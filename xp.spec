@@ -6,19 +6,21 @@ Release:	1
 Vendor:		James Clark
 License:	Free
 Group:		Applications/Publishing/XML
+Group(de):	Applikationen/Publizieren/XML
 Group(pl):	Aplikacje/Publikowanie/XML
-URL:		http://www.jclark.com/xml
 Source0:	ftp://ftp.jclark.com/pub/xml/%{name}.zip
+URL:		http://www.jclark.com/xml/
+BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
-%define	_javaclassdir	%{_datadir}/java/classes
+%define		_javaclassdir	%{_datadir}/java/classes
 
 %description
-XP - an XML Parser in Java
+XP - an XML Parser in Java.
 
 %description -l pl 
-XP - Parser XML napisany w Javie
+XP - Parser XML napisany w Javie.
 
 %prep
 %setup -q -c -T 
