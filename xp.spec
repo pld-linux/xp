@@ -12,7 +12,7 @@ Source0:	ftp://ftp.jclark.com/pub/xml/%{name}.zip
 Patch0:		%{name}-latin2.patch
 URL:		http://www.jclark.com/xml/
 BuildRequires:	unzip
-#BuildRequires:	/usr/bin/jar
+BuildRequires:	/usr/bin/jar
 BuildRequires:	sax
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
