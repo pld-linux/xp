@@ -2,7 +2,7 @@ Summary:	XP - an XML Parser in Java
 Summary(pl):	XP - Parser XML napisany w Javie
 Name:		xp
 Version:	0.5
-Release:	1
+Release:	2
 Vendor:		James Clark
 License:	Free
 Group:		Applications/Publishing/XML/Java
@@ -33,13 +33,15 @@ chmod -R a+rX *
 
 %build
 rm -f %{name}.jar
-export CLASSPATH=%{_jredir}/lib/rt.jar:%{_javaclassdir}/sax.jar:.
+CLASSPATH=%{_jredir}/lib/rt.jar:%{_javaclassdir}/sax.jar:.
+export CLASSPATH
 find com -name "*.java"  | xargs jikes -depend
 find com -name "*.class" | xargs jar -c0f %{name}.jar
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_javaclassdir}
+
 install %{name}.jar $RPM_BUILD_ROOT%{_javaclassdir}
 
 %clean
