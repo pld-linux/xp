@@ -6,8 +6,6 @@ Release:	1
 Vendor:		James Clark
 License:	Free
 Group:		Applications/Publishing/XML/Java
-Group(de):	Applikationen/Publizieren/XML/Java
-Group(pl):	Aplikacje/Publikowanie/XML/Java
 Source0:	ftp://ftp.jclark.com/pub/xml/%{name}.zip
 Patch0:		%{name}-latin2.patch
 URL:		http://www.jclark.com/xml/
