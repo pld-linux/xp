@@ -2,7 +2,7 @@ Summary:	XP - an XML Parser in Java
 Summary(pl):	XP - Parser XML napisany w Javie
 Name:		xp
 Version:	0.5
-Release:	2
+Release:	3
 Epoch:		1
 Vendor:		James Clark
 License:	Free
@@ -10,9 +10,10 @@ Group:		Applications/Publishing/XML/Java
 Source0:	ftp://ftp.jclark.com/pub/xml/%{name}.zip
 Patch0:		%{name}-latin2.patch
 URL:		http://www.jclark.com/xml/
-BuildRequires:	unzip
 BuildRequires:	jar
+BuildRequires:	jikes
 BuildRequires:	sax
+BuildRequires:	unzip
 Requires:	jre
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
