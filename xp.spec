@@ -14,7 +14,7 @@ URL:		http://www.jclark.com/xml/
 BuildRequires:	unzip
 BuildRequires:	jar
 BuildRequires:	sax
-Requires:	java
+Requires:	jre
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
