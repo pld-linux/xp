@@ -22,11 +22,11 @@ BuildArch:	noarch
 %description
 XP - an XML Parser in Java.
 
-%description -l pl 
+%description -l pl
 XP - Parser XML napisany w Javie.
 
 %prep
-%setup -q -c -T 
+%setup -q -c -T
 unzip -qa %{SOURCE0}
 chmod -R a+rX *
 %patch -p1
