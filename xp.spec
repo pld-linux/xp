@@ -8,6 +8,7 @@ Vendor:		James Clark
 License:	Free
 Group:		Applications/Publishing/XML/Java
 Source0:	ftp://ftp.jclark.com/pub/xml/%{name}.zip
+# Source0-md5:	e4a2371d5bad54eefa7287ebc62e2f1a
 Patch0:		%{name}-latin2.patch
 URL:		http://www.jclark.com/xml/
 BuildRequires:	jar
