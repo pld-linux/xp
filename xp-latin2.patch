@@ -1,0 +1,12 @@
+diff -Nur --exclude *~ xp-19991105/com/jclark/xml/tok/Encoding.java xp-19991105.new/com/jclark/xml/tok/Encoding.java
+--- xp-19991105/com/jclark/xml/tok/Encoding.java	Mon Dec 28 15:05:18 1998
++++ xp-19991105.new/com/jclark/xml/tok/Encoding.java	Sat Feb 10 15:24:38 2001
+@@ -2065,6 +2065,8 @@
+       return getUTF16Encoding();
+     if (name.equalsIgnoreCase("ISO-8859-1"))
+       return getEncoding(ISO8859_1_ENCODING);
++    if (name.equalsIgnoreCase("ISO-8859-2"))
++      return getEncoding(ISO8859_1_ENCODING);
+     if (name.equalsIgnoreCase("US-ASCII"))
+       return getEncoding(ASCII_ENCODING);
+     return null;
