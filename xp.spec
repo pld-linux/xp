@@ -21,6 +21,8 @@ BuildArch:	noarch
 
 %define		_javaclassdir	%{_datadir}/java/classes
 %define 	_jredir %{_libdir}/jre
+# _javaclasspath exported in build as $CLASSPATH by rpm
+%define		_javaclasspath %{_jredir}/lib/rt.jar:%{_javaclassdir}/sax.jar:.
 
 %description
 XP - an XML Parser in Java.
@@ -36,8 +38,6 @@ chmod -R a+rX *
 
 %build
 rm -f %{name}.jar
-CLASSPATH=%{_jredir}/lib/rt.jar:%{_javaclassdir}/sax.jar:.
-export CLASSPATH
 find com -name "*.java"  | xargs jikes -depend
 find com -name "*.class" | xargs jar -c0f %{name}.jar
 
