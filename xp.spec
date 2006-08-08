@@ -34,7 +34,7 @@ XP - analizator sk³adniowy XML-a napisany w Javie.
 %setup -q -c -T
 unzip -qa %{SOURCE0}
 chmod -R a+rX *
-%patch -p1
+%patch0 -p1
 
 %build
 rm -f %{name}.jar
