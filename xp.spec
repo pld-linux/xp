@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
 %define		_javaclassdir	%{_datadir}/java/classes
-%define 	_jredir %{_libdir}/jre
+%define 	_jredir %{java_home}/jre
 # _javaclasspath exported in build as $CLASSPATH by rpm
 %define		_javaclasspath %{_jredir}/lib/rt.jar:%{_javaclassdir}/sax.jar:.
 
