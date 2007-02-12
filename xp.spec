@@ -1,5 +1,5 @@
 Summary:	XP - an XML Parser in Java
-Summary(pl.UTF-8):   XP - analizator składniowy XML-a napisany w Javie
+Summary(pl.UTF-8):	XP - analizator składniowy XML-a napisany w Javie
 Name:		xp
 Version:	0.5
 Release:	3
