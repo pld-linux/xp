@@ -2,7 +2,7 @@ Summary:	XP - an XML Parser in Java
 Summary(pl.UTF-8):	XP - analizator składniowy XML-a napisany w Javie
 Name:		xp
 Version:	0.5
-Release:	3
+Release:	4
 Epoch:		1
 Vendor:		James Clark
 License:	Free
@@ -19,7 +19,7 @@ Requires:	jre
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
-%define		_javaclassdir	%{_datadir}/java/classes
+%define		_javaclassdir	%{_datadir}/java
 %define 	_jredir %{java_home}/jre
 # _javaclasspath exported in build as $CLASSPATH by rpm
 %define		_javaclasspath %{_jredir}/lib/rt.jar:%{_javaclassdir}/sax.jar:.
