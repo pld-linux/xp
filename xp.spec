@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.java
 Summary:	XP - an XML Parser in Java
 Summary(pl.UTF-8):	XP - analizator składniowy XML-a napisany w Javie
 Name:		xp
