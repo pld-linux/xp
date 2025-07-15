@@ -44,7 +44,7 @@ Javadoc pour %{name}.
 %prep
 %define	__unzip	/usr/bin/unzip -a
 %setup -qc
-%patch0 -p1
+%patch -P0 -p1
 rm -f %{name}.jar
 
 %build
